@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#f2f2f2;
 }
 
 .App-logo {
@@ -14,14 +18,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  
+  max-width: 500px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
+  opacity: .8;
+  border: 1px solid;
+  border-color:  #404040;
+  box-shadow: black;
+  
 }
 
 .App-link {
@@ -36,3 +46,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.input-field :focus {
+  border-bottom: 1px solid #01579b ;
+  box-shadow: 0 1px 0 0 #01579b ;
+}
+
+.minAmount{
+  display: flex;
+  justify-content:space-around;
+  border-bottom: .5px solid;
+  border-bottom-color: #c41f25;
+  width: 430px;
+  color: #c41f25;
+  
+}
+
+.plusAmount{
+  display: flex;
+  justify-content:space-around;
+  border-bottom: .5px solid;
+  border-bottom-color: #262424;
+  width: 430px;
+  
+}
+
