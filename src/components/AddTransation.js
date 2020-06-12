@@ -8,9 +8,9 @@ export const AddTransation = () => {
       <div className="row">
         <form className="col s12">
           <div className="row">
-            <div className="input-field col s6 ">
+            <div className="input-field col s6  input-field  ">
               <i className="material-icons prefix ">arrow_forward</i>
-              <input id="icon_prefix" type="text" className="validate " />
+              <input id="icon_prefix" type="text" className="validate  " />
               <label htmlFor="icon_prefix">Add text here</label>
             </div>
             <div className="input-field col s6 ">

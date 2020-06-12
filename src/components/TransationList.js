@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
 import '../App.css';
+import CountUp from 'react-countup';
+
 export const TransationList = () => {
   const { transcation } = useContext(GlobalContext);
 
@@ -19,7 +21,14 @@ export const TransationList = () => {
             className={transaction.amount < 0 ? 'minAmount' : 'plusAmount'}
           >
             <h6>{transaction.text}</h6>
-            <h6>{Math.abs(transaction.amount)}</h6>
+            <h6>
+              $
+              <CountUp
+                end={Math.abs(transaction.amount)}
+                duration={2.0}
+                separator=","
+              />
+            </h6>
             <span>
               <i className="material-icons ">delete</i>
             </span>
