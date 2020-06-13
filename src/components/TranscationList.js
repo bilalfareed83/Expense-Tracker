@@ -9,10 +9,11 @@ export const TransationList = () => {
   return (
     <div>
       <h5>
-        History{" "}
+        History
         <span>
           <i className="material-icons ">arrow_downward</i>
         </span>
+        <hr />
       </h5>
       <ul className=" tabs-fixed-width tab-demo z-depth-1">
         {transcations.map((transcation, i) => (

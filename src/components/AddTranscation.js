@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "../App.css";
 import { GlobalContext } from "../context/GlobalState";
+import M from "materialize-css";
 
 export const AddTranscation = () => {
   const { addTranscation } = useContext(GlobalContext);
@@ -8,7 +9,20 @@ export const AddTranscation = () => {
   const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
-    // event.preventdefault();
+    event.preventDefault();
+    if (!text) {
+      return M.toast({
+        html: "require tex field!",
+        classes: "#ff1a1a red darken-3",
+      });
+    }
+    if (!amount) {
+      return M.toast({
+        html: "add amount!",
+        classes: "#ff1a1a red darken-3",
+      });
+    }
+
     console.log("click");
     const newTranscation = {
       id: Math.random(Math.floor() * 10000),
@@ -16,6 +30,13 @@ export const AddTranscation = () => {
       amount: +amount,
     };
     addTranscation(newTranscation);
+
+    const setConst = () => {
+      setText("");
+      setAmount("");
+    };
+
+    setConst();
   };
 
   return (
