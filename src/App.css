@@ -44,15 +44,15 @@
     transform: rotate(360deg);
   }
 }
-
+/* 
 .input-field :focus {
   border-bottom: 1px solid #01579b !important;
   box-shadow: 0 1px 0 0 #01579b !important ;
-}
+} */
 
-input-field label {
+/* input-field label {
   color: #01579b !important;
-}
+} */
 
 .minAmount {
   display: flex;
@@ -71,4 +71,8 @@ input-field label {
   border-right: 15px solid;
   border-bottom-color: #262424;
   width: 430px;
+}
+
+.balanceMin {
+  color: #ff1a1a;
 }
