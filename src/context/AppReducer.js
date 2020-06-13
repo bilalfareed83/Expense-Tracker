@@ -1,5 +1,4 @@
 export default (state, { type, payload }) => {
-  console.log(payload);
   switch (type) {
     case "DElETE_TRANSCATION":
       return {

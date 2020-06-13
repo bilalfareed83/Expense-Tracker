@@ -23,7 +23,6 @@ export const AddTranscation = () => {
       });
     }
 
-    console.log("click");
     const newTranscation = {
       id: Math.random(Math.floor() * 10000),
       text,
