@@ -13,7 +13,7 @@ export const Balance = () => {
     <div>
       <h6>Your Balnce</h6>
       <h4 className={total < 0 ? "balanceMin" : null}>
-        $<CountUp end={Number(total)} duration={2.0} separator="," />
+        $<CountUp end={Number(total)} duration={0.25} separator="," />
       </h4>
     </div>
   );

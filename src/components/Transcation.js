@@ -14,11 +14,14 @@ const Transcation = ({ transcation }) => {
           ${sign}
           <CountUp
             end={Math.abs(transcation.amount)}
-            duration={2.0}
+            duration={0.25}
             separator=","
           />
         </h6>
-        <span onClick={() => deleteTranscation(transcation.id)}>
+        <span
+          style={{ cursor: "pointer" }}
+          onClick={() => deleteTranscation(transcation.id)}
+        >
           <i className="material-icons ">delete</i>
         </span>
       </li>
