@@ -12,7 +12,7 @@ export const AddTranscation = () => {
     event.preventDefault();
     if (!text) {
       return M.toast({
-        html: "require tex field!",
+        html: "require text field!",
         classes: "#ff1a1a red darken-3",
       });
     }
